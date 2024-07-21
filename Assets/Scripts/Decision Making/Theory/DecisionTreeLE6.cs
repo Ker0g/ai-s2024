@@ -133,6 +133,31 @@ public class DecisionTreeLE6 : MonoBehaviour
         flank.flank = false;
         TreeNode.Traverse(visible);
 
+        // Outputs Nothing
+        visible.visible = false;
+        audible.audible = false;
+        near.near = false;
+        flank.flank = false;
+        TreeNode.Traverse(visible);
+
+        visible.visible = true;
+        audible.audible = true;
+        near.near = true;
+        flank.flank = false;
+        TreeNode.Traverse(visible);
+
+        visible.visible = true;
+        audible.audible = true;
+        near.near = false;
+        flank.flank = true;
+        TreeNode.Traverse(visible);
+
+        visible.visible = true;
+        audible.audible = true;
+        near.near = true;
+        flank.flank = false;
+        TreeNode.Traverse(visible);
+
         // For full marks, your output should match the following comments:
         // "Creeping. . ."
         // Nothing
